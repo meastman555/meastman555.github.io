@@ -47,8 +47,10 @@ body{
 }
 
 #quotewithimage{
-    height: 450px;
+    height: auto;
     width: 900px;
+    max-width: 100%;
+    max-height: auto;
     border: 10px solid black;
     border-radius: 30px;
     background: url(Photos/HeaderandGeneral/NewHeader.jpg);

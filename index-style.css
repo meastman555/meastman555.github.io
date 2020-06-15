@@ -3,18 +3,52 @@ body{
     background: linear-gradient(to bottom left, #93A5CF, #E4EFE9);
 }
 
+.clear{
+    clear: both;
+    display: block;
+}
+
 #container{
-    height: auto;
-    width: device-width;
     margin: 15px 30px;
     border: 1px solid black;
 }
 
-#controllers{
-    height: 450px;
+#quotewithimage{
+    background: url(Photos/HeaderandGeneral/NewHeader.jpg);
+    float: right;
+    height: auto;
     width: 900px;
-    max-height: 100%;
     max-width: 100%;
     border: 10px solid black;
     border-radius: 30px;
 }
+
+#centertext{
+    opacity: 0;
+    transition: opacity .25s ease;
+}
+
+#centertext:hover{
+    opacity: 1;
+}
+
+#quote{
+    border-radius: 10px;
+    text-align: left;
+}
+
+#author{
+    border-radius: 10px;
+    text-align: right;
+    float: right;
+}
+
+.quotetext{
+    margin: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+
+
