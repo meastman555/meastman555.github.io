@@ -54,6 +54,7 @@ body{
     background: url(Photos/HeaderandGeneral/NewHeader.jpg);
     margin: 30px;
     float: right;
+    overflow: auto;
 }
 
 #textwithin{
