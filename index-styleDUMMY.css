@@ -1,0 +1,91 @@
+/*makes it so that a gradient takes up the entire html file space*/
+body{
+    width: device-width;
+    margin: 0;
+    background: linear-gradient(to bottom left, #93A5CF, #E4EFE9);
+}
+
+#container{
+    width: auto;
+    height: auto;
+    margin: 0 5px;
+}
+
+.clear{
+    clear: both;
+}
+
+#header{
+    padding-left: 30px;
+    float: left;
+}
+
+#title h1{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+#title h1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 70px;
+    font-weight: normal;
+    font-family: monospace;
+}
+
+#hook{
+    float: left;
+    display: inline;
+}
+
+#hook p{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 5px; 
+}
+
+#quotewithimage{
+    height: 450px;
+    width: 900px;
+    border: 10px solid black;
+    border-radius: 30px;
+    background: url(Photos/HeaderandGeneral/NewHeader.jpg);
+    margin: 30px;
+    float: right;
+    overflow: auto;
+}
+
+#textwithin{
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+#textwithin:hover{
+    opacity: 1;
+}
+
+.quotetext{
+    color: white;
+    font-style: sans-serif;
+    font-size: 20px;
+   
+}
+
+#quote{
+    text-align: center;
+    margin: 120px 30px 5px 30px;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 10px; 
+}
+
+#author{
+    float: right;
+    margin: 5px 30px 0 0;
+    text-align: right;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+}
