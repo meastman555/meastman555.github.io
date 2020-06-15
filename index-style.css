@@ -28,7 +28,7 @@ body{
     transition: opacity .25s ease;
 }
 
-#centertext:hover{
+#centertext:hover, #centertext:active{
     opacity: 1;
 }
 
