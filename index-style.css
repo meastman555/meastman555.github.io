@@ -5,6 +5,10 @@ body{
     background: linear-gradient(to bottom left, #93A5CF, #E4EFE9);
 }
 
+div{
+    height: 90vh;
+}
+
 #container{
     width: auto;
     height: auto;
