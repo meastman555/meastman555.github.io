@@ -10,34 +10,6 @@ ul{
     list-style: none;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-    transition: font-size .25s ease;
-}
-
-a:hover{
-    font-size: 23px;
-}
-
-#headermenu{
-    float: right;
-    padding-top: 20px;
-    margin-bottom: 50px;
-}
-
-#headermenu ul li{
-    float: left;
-    text-transform: uppercase;
-    font-style: italic;
-    color: white;
-    font-size: 20px;
-    padding: 5px;
-    margin-right: 20px;
-    background-color: black;
-    border-radius: 20px;
-}
-
 .clear{
     clear: both;
     display: block;
@@ -46,6 +18,53 @@ a:hover{
 #container{
     margin: 15px 30px;
     border: 1px solid black;
+}
+
+#headerinfo{
+    max-width: 100%;
+    vertical-align: top;
+}
+
+#headerinfo h1{
+    font-size: 7vh;
+    font-family: monospace;
+    margin-bottom: 5px;
+}
+
+#headerinfo p{
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 2.5vh;
+    font-style: sans-serif;
+}
+
+header{
+    max-width: 100%;
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+header ul li{
+    float: left;
+    text-transform: uppercase;
+    font-style: italic;
+    color: white;
+    font-size: 2vh;
+    margin-right: 20px;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    transition: font-size .25s ease;
+}
+
+header ul li a:hover{
+    font-size: 2.2vh;
 }
 
 #quotewithimage{
@@ -61,7 +80,7 @@ a:hover{
 
 #centertext{
     opacity: 0;
-    transition: opacity .25s ease;
+    transition: opacity .5s ease;
 }
 
 #centertext:hover{
@@ -85,6 +104,3 @@ a:hover{
     color: white;
     font-size: 2vh;
 }
-
-
-
