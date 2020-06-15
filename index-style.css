@@ -1,5 +1,6 @@
 /*makes it so that a gradient takes up the entire html file space*/
 body{
+    width: device-width;
     margin: 0;
     background: linear-gradient(to bottom left, #93A5CF, #E4EFE9);
 }
