@@ -1,6 +1,41 @@
+
+/*makes sure the html body spans the entire device height and has the whole gradient*/
 body{
     margin: 0;
     background: linear-gradient(to bottom left, #93A5CF, #E4EFE9);
+    height: 100vh;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: font-size .25s ease;
+}
+
+a:hover{
+    font-size: 23px;
+}
+
+#headermenu{
+    float: right;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+#headermenu ul li{
+    float: left;
+    text-transform: uppercase;
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 20px;
+    background-color: black;
+    border-radius: 20px;
 }
 
 .clear{
@@ -21,6 +56,7 @@ body{
     max-width: 100%;
     border: 10px solid black;
     border-radius: 30px;
+    box-sizing: border-box;
 }
 
 #centertext{
@@ -28,7 +64,7 @@ body{
     transition: opacity .25s ease;
 }
 
-#centertext:hover, #centertext:active{
+#centertext:hover{
     opacity: 1;
 }
 
