@@ -3,7 +3,7 @@
 body{
     margin: 0;
     background: linear-gradient(to bottom left, #93A5CF, #E4EFE9);
-    height: 100vh;
+    height: 98vh;
 }
 
 ul{
@@ -64,7 +64,7 @@ header ul li a{
 }
 
 header ul li a:hover{
-    font-size: 2.2vh;
+    font-size: 2.5vh;
 }
 
 #quotewithimage{
@@ -83,9 +83,12 @@ header ul li a:hover{
     transition: opacity .5s ease;
 }
 
-#centertext:hover{
-    opacity: 1;
+@media(hover:hover) and (pointer:fine){
+    #centertext:hover{
+        opacity: 1;
+    }
 }
+
 
 #quote{
     border-radius: 10px;
