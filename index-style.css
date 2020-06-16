@@ -70,7 +70,7 @@ header ul li a:hover{
 #quotewithimage{
     background: url(Photos/HeaderandGeneral/NewHeader.jpg);
     float: right;
-    height: auto;
+    height: 50vh;
     width: 900px;
     max-width: 100%;
     border: 10px solid black;
@@ -102,5 +102,5 @@ header ul li a:hover{
     margin: 10px;
     background-color: black;
     color: white;
-    font-size: 2vh;
+    font-size: 3.5vh;
 }
