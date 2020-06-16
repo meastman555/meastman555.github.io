@@ -83,10 +83,9 @@ header ul li a:hover{
     transition: opacity .5s ease;
 }
 
-@media(hover:hover) and (pointer:fine){
-    #centertext:hover{
-        opacity: 1;
-    }
+
+#centertext:hover{
+    opacity: 1;
 }
 
 
