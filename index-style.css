@@ -80,6 +80,7 @@ header ul li a:hover{
 
 #centertext{
     padding-top: 50px;
+    padding-bottom: 175px;
     opacity: 0;
     transition: opacity .5s ease;
 }
@@ -105,3 +106,29 @@ header ul li a:hover{
     color: white;
     font-size: 2.5vh;
 }
+
+.splashbuttons{
+    padding: 50px 0;
+    float: left;
+    font-size: 4vh;
+    color: white;
+    width: 1000px;
+    max-width: 100%;
+}
+
+#games{
+    float: left;
+}
+
+#mods{
+    float: right;
+}
+
+#other{
+    float: left;
+}
+
+#aboutme{
+    float: right;
+}
+
