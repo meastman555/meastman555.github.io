@@ -2,42 +2,38 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index-style.css">
-        <title>Welcome Page</title>
+        <title>Home Page</title>
     </head>
     
     <body>
         <div id="container">
-            <header>
-                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Mods</a></li>
-                    <li><a href="https://www.wikipedia.org">WebDev/Other</a></li>
-                    <li><a href="#">About Me/Contact</a></li>
-                </ul>
-            </header>
-            <div class="clear"></div>
-            <div id="headerinfo">
-                <h1>Mason Eastman</h1>
-                <p>The University of Texas at Austin Computer Science Student, Aspiring Video-Game Programmer</p>
-            </div>
-            <div class="clear"></div>
-            <div id="buttonscontainer">
-                <div id="games" class="splashbuttons"><a class="buttonword" href="https://www.wikipedia.org">Games</a></div>
-                <div id="mods" class="splashbuttons"><a class="buttonword" href="#">Mods</a></div>
-                <div id="other" class="splashbuttons"><a class="buttonword" href="#">WebDev/Other</a></div>
-                <div id="contact" class="splashbuttons"><a class="buttonword" href="#">About Me/Contact</a></div>
-            </div>
-            <div id="quotewithimage">
-                <div id="centertext">
-                    <p id="quote" class="quotetext">"The game is fun. The game is a battle. If it's not fun, why bother? If it's not a battle, where's the fun? It's a test that you pass or a quest that you fail. A race against time. Fun and battle always lock together. But the game is also something else. It's a journey; a passport to new worlds, maybe even an odyssey. A look, a feel, an exploration, close your focus and open your mind. Yes, the journey requires the right ticket, and that ticket is Nintendo Switch. But in the end it's not just where you can take your game; it's where your game can take you. So let's go."</p>
-                    <p id="author" class="quotetext">-- Reggie Fils Aim&eacute;, former president of Nintendo of America</p>
-                </div>
-            </div>
-            <div class="clear"></div>
+            <h1 id="name">Mason Eastman</h1>
+            <p id="hook">The University of Texas at Austin Computer Science Student, Aspiring Video Game Programmer</p>
             
+            <!-- controller picture with quote on left, 2x2 buttons -->
+            <!-- do a row div, with 2 columns: quote pic and buttons -->
+            <!-- button column will have 2 rows within, each with 2 columns-->
+            <!-- this should work?-->
+            <!-- Yep it works!! ^^ just make sure the heights of both outside rows is the same :)-->
+            <!-- maybe flip left/right of quote and buttons; I want quote above buttons on mobile?-->
+            
+            <div class="row">
+                <div class="col-6" style="border: 1px solid black">
+                    <div class="row">
+                        <a href="#"><div id="games" class="col-6 button"><span class="buttontext">Games</span></div></a>
+                        <a href="#"><div id="mods" class="col-6 button"><span class="buttontext">Mods</span></div></a>
+                    </div>
+                    <div class="row">
+                        <a href="#"><div id="other" class="col-6 button"><span class="buttontext">WebDev/Other</span></div></a>
+                        <a href="#"><div id="contact" class="col-6 button"><span class="buttontext">About Me/Contact</span></div></a>
+                    </div>
+                </div>
+                <div class="col-6" style="border: 1px solid black"></div>
+            </div>
         </div>
+        
+        
     </body>
 </html>

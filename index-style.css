@@ -1,176 +1,135 @@
+/*style code taken from w3schools.com tutorials on building responsive webpages*/
+/*https://www.w3schools.com/css/css_rwd_intro.asp*/
 
-/*makes sure the html body spans the entire device height and has the whole gradient*/
-body{
-    margin: 0;
-    background: linear-gradient(to bottom left, #93A5CF, #E4EFE9);
-    height: 98vh;
+/*makes sure every html element has correct fit*/
+* {
+    box-sizing: border-box;
 }
 
-ul{
-    list-style: none;
-}
-
-.clear{
+/*each row of the html page should be wrapped in a div, columns within should equal 12*/
+/*allows for row div to clear the custom flow set up by columns*/
+/*sets up next row to behave correctly*/
+.row::after{
+    content: "";
     clear: both;
-    display: block;
+    display: table;
 }
 
-#container{
-    margin: 15px 30px;
+/*each column takes up full width*/
+/*for mobile when it looks better for columns to take entire width*/
+/*better to design for mobile by default*/
+[class*="col-"]{
+    width: 100%;
+    /*columns go from left to right and have buffer space*/
+    /*this will hold true regardless of media query*/
+    float: left;
+    padding: 15px;
     border: 1px solid black;
 }
 
-#headerinfo{
-    max-width: 100%;
+/*MIGHT NEED ANOTHER QUERY FOR TABLES/SMALL COMPUTER SCREENS*/
+
+/*can use mixture of columns of different sizes so long as they equal 12/100%*/
+/*allows for easier and more responsive column design*/
+/*use media query to determine when on desktop*/
+@media only screen and (min-width: 768px){
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
 }
 
-#headerinfo h1{
-    font-size: 7vh;
+/*end of w3schools style code*/
+
+/*DEFAULT OPTIMIZED FOR MOBILE, desktop specific changes done with media queries*/
+
+body{
+    margin: 0;
+    /*body takes up full height, minimal scrolling necessary*/
+    height: 98vh;
+    background: linear-gradient(to bottom left, #93A5CF, #E4EFE9) no-repeat;
+}
+
+/*overall container with margin for the webpage elements*/
+#container{
+    margin: 20px;
+    border: 1px solid black;
+}
+
+/*my name to act as the header*/
+#name{
+    margin: 0;
+    font-size: 50px;
     font-family: monospace;
-    margin-bottom: 5px;
+    text-align: center;
 }
 
-#headerinfo p{
-    margin-top: 5px;
+/*the short sentence about me under my name*/
+#hook{
     font-style: italic;
-    font-size: 2.5vh;
-    font-style: sans-serif;
+    font-family: sans-serif;
+    text-align: center;
 }
 
-header{
-    max-width: 100%;
-    float: right;
-    padding-top: 20px;
-    padding-bottom: 10px;
+/*desktop specific changes to the header information*/
+@media only screen and (min-width: 768px){
+    #name{
+        font-size: 100px;
+        text-align: left;
+    }
+    
+    #hook{
+        font-size: 20px;
+        text-align: left;
+    }
 }
 
-header ul li{
-    float: left;
+
+/*commonalities between the four home buttons*/
+.button{
+    font-size: 20px;
+    text-align: center;
     text-transform: uppercase;
-    font-style: italic;
+    text-decoration: none;
     color: white;
-    font-size: 2vh;
-    margin-right: 20px;
-    background-color: black;
-    border: 5px solid black;
+    padding: 50px;
+    margin-top: 20px;
+    border: 10px solid black;
     border-radius: 20px;
 }
 
-header ul li a{
-    text-decoration: none;
-    color: white;
-    transition: font-size .25s ease;
-}
-
-header ul li a:hover{
-    font-size: 2.5vh;
-}
-
-#quotewithimage{
-    background: url(Photos/HeaderandGeneral/NewHeader.jpg);
-    background-size: cover;
-    float: right;
-    height: 60vh;
-    width: 800px;
-    max-width: 100%;
-    border: 10px solid black;
-    border-radius: 30px;
-    box-sizing: border-box;
-    margin-top: 30px;
-}
-
-#centertext{
-    padding-top: 50px;
-    padding-bottom: 175px;
-    opacity: 0;
-    transition: opacity .5s ease;
-}
-
-#centertext:hover{
-    opacity: 1;
-}
-
-#quote{
-    border-radius: 10px;
-    text-align: left;
-}
-
-#author{
-    border-radius: 10px;
-    text-align: right;
-    float: right;
-}
-
-.quotetext{
-    margin: 10px;
-    background-color: black;
-    color: white;
-    font-size: 2.5vh;
-}
-
-#buttonscontainer{
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-gap: 30px;
-    float: left;
-    width: 1000px;
-    max-width: 100%;
-    height: 60vh;
-    border: 1px solid black;
-    box-sizing: border-box;
-    margin: 30px 0;
-}
-
-.splashbuttons{
-    padding: 110px 0;
-    text-align: center;
-    font-size: 2.5vh;
-    font-family: sans-serif;
-    color: black;
-    font-weight: bold;
-    border: 10px solid black;
-    border-radius: 30px;
-    background-position: center;
-    box-sizing: border-box;
-}
-
-#buttonscontainer a{
+/*span for the text to allow for a solid background*/
+.buttontext{
     background: black;
+    padding: 3px;
     border-radius: 10px;
-    padding: 5px;
-    color: white;
-    text-transform: uppercase;
 }
 
-#buttonscontainer a:active{
-    color: purple;
-}
-
+/*individual backgrounds set by each button*/
 #games{
-    float: left;
-    background: url(Photos/Games/Games%20Button.jpg) center;
-    background-size: cover;
-    box-sizing: border-box;
-    
+    background: url(Photos/Games/Games%20Button2.jpg) center;
 }
 
 #mods{
-    float: right;
     background: url(Photos/Mods/Mods%20Button.png) center;
-    box-sizing: border-box;
 }
 
 #other{
-    float: left;
-    background: url(Photos/HeaderandGeneral/Other%20Button.jpg) center;
-    background-size: cover;
-    box-sizing: border-box;
+    background: url(Photos/HeaderandGeneral/Other%20Button3.jpg) center;
 }
 
 #contact{
-    float: right;
-    box-sizing: border-box;
+    background: url(Photos/Personal/Contact%20Button.jpg) center;
 }
+
 
 
 
