@@ -1,0 +1,91 @@
+/*style code taken from w3schools.com tutorials on building responsive webpages*/
+/*https://www.w3schools.com/css/css_rwd_intro.asp*/
+
+/*makes sure every html element has correct fit*/
+* {
+    box-sizing: border-box;
+}
+
+/*each row of the html page should be wrapped in a div, columns within should equal 12*/
+/*allows for row div to clear the custom flow set up by columns*/
+/*sets up next row to behave correctly*/
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*each column takes up full width*/
+/*for mobile when it looks better for columns to take entire width*/
+/*better to design for mobile by default*/
+[class*="col-"]{
+    width: 100%;
+    /*columns go from left to right and have buffer space*/
+    /*this will hold true regardless of media query*/
+    float: left;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+/*MIGHT NEED ANOTHER QUERY FOR TABLES/SMALL COMPUTER SCREENS*/
+
+/*can use mixture of columns of different sizes so long as they equal 12/100%*/
+/*allows for easier and more responsive column design*/
+/*use media query to determine when on desktop*/
+@media only screen and (min-width: 768px){
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+}
+
+/*end of w3schools style code*/
+
+
+
+body{
+    margin: 0;
+    /*body takes up full height, minimal scrolling necessary*/
+    height: 98vh;
+    background: linear-gradient(to bottom left, #93A5CF, #E4EFE9) no-repeat;
+}
+
+/*overall container with margin for the webpage elements*/
+#container{
+    margin: 20px;
+    border: 1px solid black;
+}
+
+#name{
+    margin: 0;
+    font-size: 50px;
+    font-family: monospace;
+    text-align: center;
+}
+
+#hook{
+    font-style: italic;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/*desktop specific changes to the header information*/
+@media only screen and (min-width: 768px){
+    #name{
+        font-size: 100px;
+        text-align: left;
+    }
+    
+    #hook{
+        font-size: 20px;
+        text-align: left;
+    }
+}
