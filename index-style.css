@@ -24,7 +24,7 @@
     /*this will hold true regardless of media query*/
     float: left;
     padding: 15px;
-    border: 1px solid black;
+/*    border: 1px solid black;*/
 }
 
 /*MIGHT NEED ANOTHER QUERY FOR TABLES/SMALL COMPUTER SCREENS*/
@@ -61,7 +61,7 @@ body{
 /*overall container with margin for the webpage elements*/
 #container{
     margin: 20px;
-    border: 1px solid black;
+/*    border: 1px solid black;*/
 }
 
 /*my name to act as the header*/
@@ -92,10 +92,9 @@ body{
     }
 }
 
-
 /*commonalities between the four home buttons*/
 .button{
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -130,35 +129,33 @@ body{
     background: url(Photos/Personal/Contact%20Button.jpg) center;
 }
 
-/*setting background and text properties for the image and quote*/
+/*backdrop of the entire div*/
 #quotewithimage{
     background: url(Photos/HeaderandGeneral/NewHeader.jpg) center;
     border: 10px solid black;
     border-radius: 30px;
 }
 
+/*text properties of the quote and author, for mobile*/
 .quotetext{
     margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
     color: white;
     background: black;
-    border: 2px solid black;
     border-radius: 10px;
 }
 
-#quote{
-    padding: 10px;
-    font-size: 13px;
-    text-align: center;
-    color: white;
+/*properties of the quote text and image when on desktop*/
+@media only screen and (min-width: 768px){
+    #centertext{
+        opacity: 0;
+        transition: opacity .25s ease;
+    }
+    
+    #centertext:hover{
+        opacity: 1;
+    }
 }
-
-#author{
-    padding: 10px;
-    font-size: 15px;
-    color: white;
-    text-align: left;
-}
-
-
-
-
