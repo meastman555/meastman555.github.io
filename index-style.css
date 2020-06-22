@@ -54,7 +54,7 @@
 body{
     margin: 0;
     /*body takes up full height, minimal scrolling necessary*/
-    height: 98vh;
+/*    height: 98vh;*/
     background: linear-gradient(to bottom left, #93A5CF, #E4EFE9) no-repeat;
 }
 
@@ -101,7 +101,7 @@ body{
     text-decoration: none;
     color: white;
     padding: 50px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     border: 10px solid black;
     border-radius: 20px;
 }
@@ -128,6 +128,35 @@ body{
 
 #contact{
     background: url(Photos/Personal/Contact%20Button.jpg) center;
+}
+
+/*setting background and text properties for the image and quote*/
+#quotewithimage{
+    background: url(Photos/HeaderandGeneral/NewHeader.jpg) center;
+    border: 10px solid black;
+    border-radius: 30px;
+}
+
+.quotetext{
+    margin: 10px;
+    color: white;
+    background: black;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#quote{
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+}
+
+#author{
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    text-align: left;
 }
 
 
