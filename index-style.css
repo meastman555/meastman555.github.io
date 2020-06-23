@@ -32,7 +32,7 @@
 /*can use mixture of columns of different sizes so long as they equal 12/100%*/
 /*allows for easier and more responsive column design*/
 /*use media query to determine when on desktop*/
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 900px){
     .col-1{width: 8.33%;}
     .col-2{width: 16.66%;}
     .col-3{width: 25%;}
@@ -53,10 +53,17 @@
 
 body{
     margin: 0;
-    /*body takes up full height, minimal scrolling necessary*/
-/*    height: 98vh;*/
     background: linear-gradient(to bottom left, #93A5CF, #E4EFE9) no-repeat;
 }
+
+/*changes the height of the body to take up the entire screen, no scrolling on desktop*/
+@media only screen and (min-width: 900px){
+    body{
+        height: 98vh;
+    }
+}
+
+
 
 /*overall container with margin for the webpage elements*/
 #container{
@@ -80,15 +87,17 @@ body{
 }
 
 /*desktop specific changes to the header information*/
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 900px){
     #name{
         font-size: 100px;
         text-align: left;
+        margin-left: 15px;
     }
     
     #hook{
         font-size: 20px;
         text-align: left;
+        margin-left: 15px;
     }
 }
 
@@ -99,7 +108,7 @@ body{
     text-transform: uppercase;
     text-decoration: none;
     color: white;
-    padding: 50px;
+    padding: 50px 0;
     margin-bottom: 20px;
     border: 10px solid black;
     border-radius: 20px;
@@ -136,8 +145,19 @@ body{
     border-radius: 30px;
 }
 
+
+/*properties of the 4 buttons when on desktop*/
+@media only screen and (min-width: 900px){
+    .button{
+        margin-right: 25px;
+        font-size: 25px;
+        height: 200px;
+        padding: 75px 0;
+    }
+}
+
 /*text properties of the quote and author, for mobile*/
-.quotetext{
+#quotewithimage p{
     margin: 10px;
     padding: 10px;
     font-size: 15px;
@@ -149,7 +169,7 @@ body{
 }
 
 /*properties of the quote text and image when on desktop*/
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 900px){
     #centertext{
         opacity: 0;
         transition: opacity .25s ease;
@@ -157,5 +177,9 @@ body{
     
     #centertext:hover{
         opacity: 1;
+    }
+    
+    #quotewithimage p{
+        font-size: 20px;
     }
 }
