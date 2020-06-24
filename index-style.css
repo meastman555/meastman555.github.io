@@ -24,7 +24,7 @@
     /*this will hold true regardless of media query*/
     float: left;
     padding: 15px;
-/*    border: 1px solid black;*/
+   border: 1px solid black;
 }
 
 /*MIGHT NEED ANOTHER QUERY FOR TABLES/SMALL COMPUTER SCREENS*/
@@ -51,6 +51,7 @@
 
 /*DEFAULT OPTIMIZED FOR MOBILE, desktop specific changes done with media queries*/
 
+/*body and container will be used in each index file*/
 body{
     margin: 0;
     background: linear-gradient(to bottom left, #93A5CF, #E4EFE9) no-repeat;
@@ -63,23 +64,21 @@ body{
     }
 }
 
-
-
 /*overall container with margin for the webpage elements*/
 #container{
     margin: 20px;
 /*    border: 1px solid black;*/
 }
 
-/*my name to act as the header*/
-#name{
+/*title of page to act as the header*/
+#title{
     margin: 0;
     font-size: 50px;
     font-family: monospace;
     text-align: center;
 }
 
-/*the short sentence about me under my name*/
+/*brief description under name, if applicable*/
 #hook{
     font-style: italic;
     font-family: sans-serif;
@@ -88,7 +87,7 @@ body{
 
 /*desktop specific changes to the header information*/
 @media only screen and (min-width: 900px){
-    #name{
+    #title{
         font-size: 100px;
         text-align: left;
         margin-left: 15px;
@@ -123,24 +122,24 @@ body{
 
 /*individual backgrounds set by each button*/
 #games{
-    background: url(Photos/Games/Games%20Button2.jpg) center;
+    background: url(images/Games\ Button.jpg) center;
 }
 
 #mods{
-    background: url(Photos/Mods/Mods%20Button.png) center;
+    background: url(images/Mods\ Button.png) center;
 }
 
 #other{
-    background: url(Photos/HeaderandGeneral/Other%20Button3.jpg) center;
+    background: url(images/Other\ Button.jpg) center;
 }
 
 #contact{
-    background: url(Photos/Personal/Contact%20Button.jpg) center;
+    background: url(images/Contact\ Button.jpg) center;
 }
 
 /*backdrop of the entire div*/
 #quotewithimage{
-    background: url(Photos/HeaderandGeneral/NewHeader.jpg) center;
+    background: url(images/Quote\ Pic.jpg) center;
     border: 10px solid black;
     border-radius: 30px;
 }
