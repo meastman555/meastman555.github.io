@@ -110,6 +110,7 @@ body{
 
 /*brief description under name, if applicable*/
 .hook{
+    margin-top: 5px;
     font-style: italic;
     font-family: sans-serif;
     text-align: center;
@@ -126,6 +127,7 @@ body{
     .hook{
         font-size: 20px;
         text-align: left;
+        margin-bottom: 50px;
         /* margin-left: 15px; */
     }
 }
@@ -242,5 +244,19 @@ body{
     max-width: 100%;
     border: 10px solid black;
     border-radius: 30px;
+}
+
+/*desktop properties of the elements of the sub splash pages*/
+@media only screen and (min-width: 900px){
+    .subtitle{
+        font-size: 40px;
+    }
+    .description{
+        font-size: 25px;
+    }
+    .subimage{
+        width: auto;
+        height: 300px;
+    }
 }
 
