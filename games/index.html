@@ -9,31 +9,32 @@
 
     <body>
         <div id="container">
-            <!--make a row above this for the headers that can link to any page-->
-            <!--on desktop, float it right, on mobile put it center-->
-
-
-            <!--header information, in same format as splash page-->
-            <h1 id="title">Games</h1>
-            <p id="hook">Collaboratively Created Games of Which I Was the Lead Programmer</p>
+            <!--top row for standard header back to other splash pages-->
+            <div class="row">
+                <div class="header">
+                    <a href="/index.html">Home</a>
+                    <a href="/mods/index.html">Mods</a>
+                    <a href="/other/index.html">Other</a>
+                    <a href="/aboutme/index.html">About Me</a>
+                </div>
+            </div>
+            <!--title information, in same format as splash page-->
+            <div class="row">
+                <h1 class="title">Games</h1>
+                <p class="hook">Collaboratively Created Games of Which I Was the Lead Programmer</p>
+            </div>
             <!--row for endangered-->
             <div class="row">
                 <!--left side of screen is name and description-->
-                <div id="endangered" class="col-5">
-                    <h2 class="subtitle">Endangered</h2>
+                <div class="col-5">
+                    <a href="#" class="subtitle">Endangered</a>
                     <p class="description">A simple 2-D platformer created at a 36-hour Game Jam through the University of Texas' Game Development Club</p>
                 </div>
                 <!--right side of screen is title image-->
-                <!--make specifics of styling of images a class bc other than the src it'll be the same-->
-                <!--on mobie, consider making picture background to follow style of hide it entirely-->
                 <div class="col-7">
-                    <img src="images/Endangered/Endangered Splash Image.JPG" height="375px" width="575px">
+                    <img src="images/Endangered/Endangered Splash Image.JPG" class="subimage">
                 </div>
             </div>
-
-
         </div>
-
     </body>
-
 </html>

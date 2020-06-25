@@ -23,8 +23,8 @@
     /*columns go from left to right and have buffer space*/
     /*this will hold true regardless of media query*/
     float: left;
-    padding: 15px;
-   border: 1px solid black;
+    padding: 5px;
+    /* border: 1px solid black; */
 }
 
 /*MIGHT NEED ANOTHER QUERY FOR TABLES/SMALL COMPUTER SCREENS*/
@@ -46,7 +46,6 @@
     .col-11{width: 91.66%;}
     .col-12{width: 100%;}
 }
-
 /*end of w3schools style code*/
 
 /*DEFAULT OPTIMIZED FOR MOBILE, desktop specific changes done with media queries*/
@@ -66,12 +65,43 @@ body{
 
 /*overall container with margin for the webpage elements*/
 #container{
-    margin: 20px;
-/*    border: 1px solid black;*/
+    margin: 25px;
+    /* border: 1px solid black; */
+}
+
+@media only screen and (min-width: 900px){
+    #container{
+        margin: 50px;
+    }
+}
+
+/*for non-main pages, brings you back to home or any main page*/
+.header{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+/*floats the header to the right if on desktop*/
+@media only screen and (min-width: 900px){
+    .header{
+        float: right;
+    }
+}
+
+/*link properties of the header, standard and when hovering*/
+.header a{
+    padding: 0 13px;
+    color: white;
+    text-decoration: none;
+}
+
+.header a:hover{
+    color: lightcoral;
 }
 
 /*title of page to act as the header*/
-#title{
+.title{
     margin: 0;
     font-size: 50px;
     font-family: monospace;
@@ -79,7 +109,7 @@ body{
 }
 
 /*brief description under name, if applicable*/
-#hook{
+.hook{
     font-style: italic;
     font-family: sans-serif;
     text-align: center;
@@ -87,16 +117,16 @@ body{
 
 /*desktop specific changes to the header information*/
 @media only screen and (min-width: 900px){
-    #title{
+    .title{
         font-size: 100px;
         text-align: left;
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
     
-    #hook{
+    .hook{
         font-size: 20px;
         text-align: left;
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
 }
 
@@ -111,6 +141,10 @@ body{
     margin-bottom: 20px;
     border: 10px solid black;
     border-radius: 20px;
+}
+
+.button:hover{
+    color: lightcoral;
 }
 
 /*span for the text to allow for a solid background*/
@@ -182,3 +216,31 @@ body{
         font-size: 20px;
     }
 }
+
+/*subtitle, used for name of game/title of project*/
+.subtitle{
+    font-family: monospace;
+    font-size: 23px;
+    color: black;
+}
+
+.subtitle:hover{
+    color: lightcoral;
+}
+
+/*description of games and projects under subtitle*/
+.description{
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 13px;
+}
+
+/*properties of images accompanying games, etc, on sub-splash pages*/
+.subimage{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    border: 10px solid black;
+    border-radius: 30px;
+}
+
