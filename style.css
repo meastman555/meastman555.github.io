@@ -78,7 +78,7 @@ body{
 /*for non-main pages, brings you back to home or any main page*/
 .header{
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     background-color: black;
 }
 
@@ -86,6 +86,7 @@ body{
 @media only screen and (min-width: 900px){
     .header{
         float: right;
+        font-size: 25px;
     }
 }
 
@@ -111,6 +112,7 @@ body{
 /*brief description under name, if applicable*/
 .hook{
     margin-top: 5px;
+    padding-bottom: 20px;
     font-style: italic;
     font-family: sans-serif;
     text-align: center;
@@ -232,6 +234,7 @@ body{
 
 /*description of games and projects under subtitle*/
 .description{
+    margin-bottom: 0;
     font-family: sans-serif;
     font-style: italic;
     font-size: 13px;
@@ -239,7 +242,7 @@ body{
 
 /*properties of images accompanying games, etc, on sub-splash pages*/
 .subimage{
-    margin: 0;
+    margin-bottom: 30px;
     padding: 0;
     max-width: 100%;
     border: 10px solid black;
