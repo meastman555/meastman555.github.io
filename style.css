@@ -237,7 +237,7 @@ body{
     margin-bottom: 0;
     font-family: sans-serif;
     font-style: italic;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 /*properties of images accompanying games, etc, on sub-splash pages*/
@@ -260,6 +260,50 @@ body{
     .subimage{
         width: auto;
         height: 300px;
+    }
+}
+
+/*overrides the subtitle hover so that non-links don't turn pink*/
+.mods:hover{
+    color: black;
+}
+
+/*ensures that the clickable link for the mod, the name of the mod, behaves correctly on hover*/
+.modlink{
+    color: black;
+}
+
+.modlink:hover{
+    color: lightcoral;
+}
+
+/*makes the pictures on the about me page circular*/
+.personalimage{
+    padding: 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+    border: 10px solid black;
+    border-radius: 50%;
+    height: 300px;
+}
+
+/*scales the personal images to match the other subimages on desktop*/
+@media only screen and (min-width: 900px){
+    .personalimage{
+        height: 400px;
+    }
+}
+
+/*general text styling for paragraphs on pages*/
+.generaltext{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+/*desktop properties of general text*/
+@media only screen and (min-width: 900px){
+    .generaltext{
+        font-size: 22px;
     }
 }
 
