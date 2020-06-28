@@ -316,7 +316,7 @@ body{
 /*very similar to the subimage class but scales height differently*/
 /*and no rounded borders because this isn't the same as the other "button" pictures*/
 .specificimage{
-    margin: 50px 0;
+    margin: 20px 0;
     padding: 0;
     max-width: 100%;
 }
