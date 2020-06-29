@@ -27,8 +27,6 @@
     /* border: 1px solid black; */
 }
 
-/*MIGHT NEED ANOTHER QUERY FOR TABLES/SMALL COMPUTER SCREENS*/
-
 /*can use mixture of columns of different sizes so long as they equal 12/100%*/
 /*allows for easier and more responsive column design*/
 /*use media query to determine when on desktop*/
@@ -48,8 +46,10 @@
 }
 /*end of w3schools style code*/
 
+
 /*DEFAULT OPTIMIZED FOR MOBILE, desktop specific changes done with media queries*/
 
+/*ensures document has no visible whitespace outside gradient*/
 html{
     min-height: 100%;
 }
@@ -59,13 +59,6 @@ body{
     margin: 0;
     background: linear-gradient(to bottom left, #93A5CF, #E4EFE9) no-repeat;
 }
-
-/*changes the height of the body to take up the entire screen, no scrolling on desktop*/
-/* @media only screen and (min-width: 900px){
-    body{
-        height: 98vh;
-    }
-} */
 
 /*overall container with margin for the webpage elements*/
 #container{
@@ -128,14 +121,12 @@ body{
     .title{
         font-size: 100px;
         text-align: left;
-        /* margin-left: 15px; */
     }
     
     .hook{
         font-size: 20px;
         text-align: left;
         margin-bottom: 50px;
-        /* margin-left: 15px; */
     }
 }
 
