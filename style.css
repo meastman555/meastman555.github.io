@@ -49,9 +49,17 @@
 
 /*DEFAULT OPTIMIZED FOR MOBILE, desktop specific changes done with media queries*/
 
+/*custom fonts used free from the internet*/
+@font-face {
+    font-family: avenir;
+    src: url("/fonts/avenir/AvenirLTStd-Book.otf");
+}
+
+
 /*ensures document has no visible whitespace outside gradient*/
 html{
     min-height: 100%;
+    font-family: avenir;
 }
 
 /*body and container will be used in each index file*/
@@ -102,7 +110,7 @@ body{
 .title{
     margin: 0;
     font-size: 50px;
-    font-family: monospace;
+    font-family: avenir;
     text-align: center;
     text-transform: uppercase;
 }
@@ -112,7 +120,7 @@ body{
     margin-top: 5px;
     padding-bottom: 20px;
     font-style: italic;
-    font-family: sans-serif;
+    font-family: avenir;
     text-align: center;
 }
 
@@ -150,7 +158,7 @@ body{
 /*span for the text to allow for a solid background*/
 .buttontext{
     background: black;
-    padding: 3px;
+    padding: 10px;
     border-radius: 10px;
 }
 
@@ -194,7 +202,7 @@ body{
     margin: 10px;
     padding: 10px;
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: avenir;
     text-align: center;
     color: white;
     background: black;
@@ -219,7 +227,7 @@ body{
 
 /*subtitle, used for name of game/title of project*/
 .subtitle{
-    font-family: monospace;
+    font-family: avenir;
     font-size: 23px;
     color: black;
 }
@@ -231,7 +239,7 @@ body{
 /*description of games and projects under subtitle*/
 .description{
     margin-bottom: 0;
-    font-family: sans-serif;
+    font-family: avenir;
     font-style: italic;
     font-size: 15px;
 }
@@ -293,7 +301,7 @@ body{
 /*general text styling for paragraphs on pages*/
 .generaltext{
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: avenir;
 }
 
 /*desktop properties of general text*/
@@ -307,8 +315,16 @@ body{
 /*very similar to the subimage class but scales height differently*/
 /*and no rounded borders because this isn't the same as the other "button" pictures*/
 .specificimage{
-    margin: 20px 0;
+    margin: 5px 0;
     padding: 0;
     max-width: 100%;
+    border: 3px solid black;
 }
 
+/*changes image scaling once on larger screen*/
+@media only screen and (min-width: 900px){
+    .specificimage{
+        margin: 10px 0;
+        height: 600px;
+    }
+}
