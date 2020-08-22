@@ -24,7 +24,6 @@
     /*this will hold true regardless of media query*/
     float: left;
     padding: 5px;
-    /* border: 1px solid black; */
 }
 
 /*can use mixture of columns of different sizes so long as they equal 12/100%*/
@@ -200,7 +199,7 @@ body{
 
 /*text properties of the quote and author, for mobile*/
 #quotewithimage p{
-    margin: 30px;
+    margin: 25px;
     padding: 10px;
     font-size: 20px;
     font-family: avenir;
