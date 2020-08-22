@@ -85,13 +85,14 @@ body{
     padding: 10px;
     margin-bottom: 30px;
     background-color: black;
+    font-size: 15px;
 }
 
 /*floats the header to the right if on desktop*/
 @media only screen and (min-width: 900px){
     .header{
         float: right;
-        font-size: 25px;
+        font-size: 35px;
     }
 }
 
@@ -184,8 +185,8 @@ body{
     background: url(images/Quote\ Pic.jpg) center;
     border: 10px solid black;
     border-radius: 30px;
+    height: 260px;
 }
-
 
 /*properties of the 4 buttons when on desktop*/
 @media only screen and (min-width: 900px){
@@ -199,9 +200,9 @@ body{
 
 /*text properties of the quote and author, for mobile*/
 #quotewithimage p{
-    margin: 10px;
+    margin: 30px;
     padding: 10px;
-    font-size: 15px;
+    font-size: 20px;
     font-family: avenir;
     text-align: center;
     color: white;
@@ -211,17 +212,13 @@ body{
 
 /*properties of the quote text and image when on desktop*/
 @media only screen and (min-width: 900px){
-    #centertext{
-        opacity: 0;
-        transition: opacity .25s ease;
-    }
-    
-    #centertext:hover{
-        opacity: 1;
+    #quotewithimage{
+        height: 420px;
     }
     
     #quotewithimage p{
-        font-size: 20px;
+        margin: 90px 25px;
+        font-size: 35px;
     }
 }
 
