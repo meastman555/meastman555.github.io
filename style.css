@@ -70,7 +70,6 @@ body{
 /*overall container with margin for the webpage elements*/
 #container{
     margin: 25px;
-    /* border: 1px solid black; */
 }
 
 @media only screen and (min-width: 900px){
