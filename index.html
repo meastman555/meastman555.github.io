@@ -1,41 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
         <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <!--loading Bootstrap stylesheet from jsDeliver CDN, copied from their website https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     </head>
-    
+
     <body>
-        <div id="container">
-            <!--header info-->
+        <!--I can literally just change the sizing of the container to set whatever margins I want, POGGERS-->
+        <div class="container">  
+            <h1>Hello World!</h1>
+            <p>This is me messing around with Bootstrap.</p>
+            <p>Apparently it has like everything. So read the docs, design some pages, and USE WHAT THEY GIVE YOU!!! It's a lot, and a lot of it is awesome stuff to incorporate.</p>
             <div class="row">
-                <h1 class="title">Mason Eastman</h1>
-                <p class="hook">The University of Texas at Austin Computer Science Student and Video Game Programmer</p>
-            </div>
-            <!--buttons and quotepicture in the same row-->
-            <div class="row">
-                <!--left (first) column has the four buttons-->
-                <div class="col-7">
-                    <!--2 rows each with 2 columns allows for the nested buttons on desktop-->
-                    <!--on mobile they are all stacked in this order-->
-                    <div class="row">
-                        <a href="games"><div id="games" class="col-5 button"><span class="buttontext">Games</span></div></a>
-                        <a href="mods"><div id="mods" class="col-5 button"><span class="buttontext">Mods</span></div></a>
-                    </div>
-                    <div class="row">
-                        <a href="other"><div id="other" class="col-5 button"><span class="buttontext">Other</span></div></a>
-                        <a href="aboutme"><div id="contact" class="col-5 button"><span class="buttontext">About Me</span></div></a>
-                    </div>
-                </div>
-                <!--right (second) column is for the image with quote-->
-                <div class="col-5">
-                    <div id="quotewithimage">
-                        <p id="centertext">"Above all, video games are meant to be just one thing: fun for everyone."<br /><br />-- Satoru Iwata, late president of <i>Nintendo</i></p>
-                    </div>
-                </div>
-            </div>
+                <div class="col-sm-8">col-sm-8</div>
+                <div class="col-sm-4">col-sm-4</div>
+              </div>
+              <div class="row">
+                <div class="col-sm">col-sm</div>
+                <div class="col-sm">col-sm</div>
+                <div class="col-sm">col-sm</div>
+              </div>
         </div>
+      
+
+        <!--loading Bootstrap Javascript scripts from jsDeliver CDN, copied from their website https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
+
 </html>
