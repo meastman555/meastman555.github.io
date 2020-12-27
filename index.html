@@ -6,26 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
         <!--loading Bootstrap stylesheet from jsDeliver CDN, copied from their website https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
     </head>
 
     <body>
         <!--I can literally just change the sizing of the container to set whatever margins I want, POGGERS-->
-        <div class="container">  
-            <h1>Hello World!</h1>
-            <p>This is me messing around with Bootstrap.</p>
-            <p>Apparently it has like everything. So read the docs, design some pages, and USE WHAT THEY GIVE YOU!!! It's a lot, and a lot of it is awesome stuff to incorporate.</p>
-            <div class="row">
-                <div class="col-sm-8">col-sm-8</div>
-                <div class="col-sm-4">col-sm-4</div>
-              </div>
-              <div class="row">
-                <div class="col-sm">col-sm</div>
-                <div class="col-sm">col-sm</div>
-                <div class="col-sm">col-sm</div>
-              </div>
+        <div class="top-bar container-fluid">
+            <div class="container">
+                <!--header text-->
+                <div id="header">
+                    <p id="name" class="fw-bold text-center text-white">Mason Eastman</p>
+                    <p class="fs-3 fst-italic text-center text-white">The University of Texas at Austin Computer Science Student and Video Game Programmer</p>    
+                </div>    
+            </div>
         </div>
-      
-
         <!--loading Bootstrap Javascript scripts from jsDeliver CDN, copied from their website https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
