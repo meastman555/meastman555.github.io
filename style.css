@@ -1,11 +1,78 @@
-.top-bar {
+/* MOBILE-first design, so media query breakpoints are to change styling for computer screens */
+/* default class and id styling is for mobile */
+/* inspired by Bootstrap, but I wanted to learn how to achieve similar effects using the vanilla languages */
+
+/* container for extra small, small, and medium devices */
+/* this is so that the page has style for phones and tablets and another style for computers */
+.container {
+    max-width: 100%;
+    margin: auto;
+    border: 1px solid red;
+}
+
+/* containers change their max width for large extra large devices (computers) */
+/* also creates a nice margin on bigger devies for readability of content */
+/*@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}*/
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* this is so that the header's background can extend to the edges of the screen while keeping internal elements correctly spaced */
+body {
+    margin: 0px;
+    background-color: whitesmoke;
+}
+
+/* tops each page with a relevant title and description of what the page is about */
+.header {
+    border: 1px solid red;
+    padding: 20px 10px;
     background-color: black;
+    overflow: hidden;
 }
 
-#header {
-    padding: 50px;
+.main_title {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 2.7em;
+    font-weight: bold;
 }
 
-#name {
-    font-size: 100px;
+.main_description {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-family: sans-serif;
+    font-size: 1.3em;
+}
+
+/* header components for computers */
+@media (min-width: 992px) {
+    .header {
+        padding: 50px;
+    }
+
+    .main_title {
+        /*border: 1px solid white;*/
+        margin: 30px 0;
+        font-size: 5.5em;
+    }
+
+    .main_description {
+        font-size: 1.7em;
+    }
 }
