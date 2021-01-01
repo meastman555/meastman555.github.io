@@ -18,13 +18,14 @@
         </div>
         <!--container to hold the home page buttons-->
         <div class="container">
-            <button class="home_button">Games</button>
-            <button class="home_button">Mods</button>
-            <button class="home_button">Other</button>
-            <button class="home_button">About Me</button>
+            <button id="games" class="home_button"><span class="button_text">Games</span></button>
+            <button id="mods" class="home_button"><span class="button_text">Mods</span></button>
+            <button id="other" class="home_button"><span class="button_text">Other</span></button>
+            <button id="aboutme" class="home_button"><span class="button_text">About Me</span></button>
         </div>
 
-        <!--controls the buttons fading in after page loads-->
-        <script src="index.js"></script>
+        <!--controls the buttons fading in after page loads, and loading the correct pages after clicking respective buttons-->
+        <!--not a long js file, but keeps this HTML file nice and uncluttered-->
+        <script src="home.js"></script>
     </body>
 </html>
