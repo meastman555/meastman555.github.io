@@ -20,14 +20,16 @@
         </div>
         <!--container to hold the home page buttons-->
         <div id="buttons" class="container">
-            <button id="games" class="home_button"><span class="button_text">Games</span></button>
-            <button id="mods" class="home_button"><span class="button_text">Mods</span></button>
-            <button id="other" class="home_button"><span class="button_text">Other</span></button>
-            <button id="aboutme" class="home_button"><span class="button_text">About Me</span></button>
+            <a class="link" href="/games/index.html"><button id="games" class="home_button"><span class="button_text">Games</span></button></a>
+            <a class="link" href="/mods/index.html"><button id="mods" class="home_button"><span class="button_text">Mods</span></button></a>
+            <a class="link" href="/other/index.html"><button id="other" class="home_button"><span class="button_text">Other</span></button></a>
+            <a class="link" href="/aboutme/index.html"><button id="aboutme" class="home_button"><span class="button_text">About Me</span></button></a>
         </div>
 
         <!--controls the buttons fading in after page loads, and loading the correct pages after clicking respective buttons-->
-        <!--not a long js file, but keeps this HTML file nice and uncluttered-->
-        <script src="home.js"></script>
+        <!--only one line of JS, so we do it here instead of creating a whole new file-->
+        <script>
+            document.body.onload=function(){document.getElementById("buttons").style.opacity = 1;}
+        </script>
     </body>
 </html>
