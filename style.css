@@ -159,71 +159,109 @@ body {
     background-image: url();
 }
 
+/* header links that act as a nav bar to other pages */
+.nav_links {
+    margin: 10px 10px 20px 10px;
+    text-align: center;
+}
+
+.nav_link {
+    margin-right: 20px;
+    font-size: 1.2em;
+    color: greenyellow;
+}
+
+.nav_link:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 992px) {
+    .nav_links {
+        margin: auto;
+    }
+
+    .nav_link {
+        margin-right: 100px;
+        font-size: 1.5em;
+    }
+
+    .nav_link:hover {
+        color: green;
+    }
+}
+
 /* deals with the listed games/mods/other projects to ensure proper spacing */
 /* actual text styling is handled after */
-.list_title_and_description {
-    padding: 5px;
-    background-color: lightgray;
+.list_sub_entry {
+    margin: 20px 10px;
+    overflow: hidden;
+}
+
+@media (min-width: 992px) {
+    .list_sub_entry {
+        margin: 50px 10px;
+    }
+}
+
+.list_button {
+    display: block;
+    position: relative;
+    margin: 10px;
     border: 2px solid black;
     border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 10px 10px rgba(0, 0, 0, 0.);
+    outline: none;
+    background-color: lightgrey;
 }
 
-.list_title_link {
-    width: 100%;
-    display: block;
+@media (min-width: 992px) {
+    .list_button {
+        display: inline;
+        float: left;
+        width: 45%;
+        margin: 0px;
+    }
+
+    .list_button:hover {
+        cursor: pointer;
+    }
+}
+
+.list_button:active {
+    box-shadow: 0px 0px #6b54d3;
+    -moz-box-shadow: 0px 0px #6b54d3;
+    -webkit-box-shadow: 0px 0px #6b54d3;
+    top: 10px;
+}
+
+/* elements of each games' information on the subpage */
+.list_title {
     text-align: center;
-    color: black;
-    font-size: 1.5em;
-}
-
-/* change some of this, for now it's just glorified proof of concept */
-.list_title_link:visited {
-    color: slategray;
+    font-size: 2.2em;
+    margin-bottom: 5px;
 }
 
 .list_description {
-    margin-top: 10px;
     text-align: center;
+    font-size: 1.1em;
 }
 
-/* ensures the title images only show when on computers, as to not clutter up mobile view */
 .list_image {
     display: none;
 }
 
-.sub_page_entry {
-    margin: 20px;
-    overflow: hidden;
-}
-
-/* computer styling for elements of each games' information on the subpage */
 @media (min-width: 992px) {
-    .sub_page_entry {
-        margin: 50px 0px;
-    }
-
-    .list_title_and_description {
-        float: left;
-        width: 40%;
-        padding: 20px;
-        margin: auto;
-        vertical-align: middle;
-    }
-
-    .list_title_link {
-        text-align: left;
-        font-size: 2.3em;
-    }
-
-    .list_title_link:hover {
-        color: whitesmoke;
+    .list_title {
+        font-size: 3.2em;
     }
 
     .list_description {
-        text-align: left;
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
+    /* ensures the title images only show when on computers, as to not clutter up mobile view */
     .list_image {
         display: inline;
         float: right;
