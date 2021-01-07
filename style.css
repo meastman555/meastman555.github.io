@@ -34,7 +34,6 @@ body {
 .header {
     padding: 20px 10px;
     background-color: black;
-    overflow: hidden;
 }
 
 .main_title {
@@ -193,8 +192,8 @@ body {
 /* deals with the listed games/mods/other projects to ensure proper spacing */
 /* actual text styling is handled after */
 .list_sub_entry {
-    margin: 20px 10px;
-    overflow: hidden;
+    margin: 20px 10px 0px 10px;
+    display: inline-block;
 }
 
 @media (min-width: 992px) {
