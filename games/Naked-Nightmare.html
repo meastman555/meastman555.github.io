@@ -40,11 +40,51 @@
             <p><a class="content_link" href="https://github.com/meastman555/Naked-Nightmare">See My Code and Download the Latest Build!</a></p>
             <p class="content_description">Controls: WASD for movement.</p>
 
+            <!--carousel code adapted from W3 schools at https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+            <!--carousel container-->
+            <div class="carousel_container">
+
+                <!--full-width images with number and caption text-->
+                <div class="carousel_slide carousel_fade">
+                    <div class="carousel_numbers">1 / 3</div>
+                    <img class="carousel_image" src="images/Naked Nightmare/Naked Nightmare 1.png">
+                    <!--<div class="carousel_text">Caption Text</div>-->
+                </div>
             
+                <div class="carousel_slide carousel_fade">
+                    <div class="carousel_numbers">2 / 3</div>
+                    <img class="carousel_image" src="images/Naked Nightmare/Naked Nightmare 2.png">
+                    <!--<div class="carousel_text">Caption Two</div>-->
+                </div>
+            
+                <div class="carousel_slide carousel_fade">
+                    <div class="carousel_numbers">3 / 3</div>
+                    <img class="carousel_image" src="images/Naked Nightmare/Naked Nightmare 3.png">
+                    <!--<div class="carousel_text">Caption Three</div>-->
+                </div>
+            
+                <!--next and previous buttons-->
+                <a class="carousel_prev" onclick="cycle_image(-1)">&#10094;</a>
+                <a class="carousel_next" onclick="cycle_image(1)">&#10095;</a>
+            </div>
+
+            <br>
+            
+            <!--the dots/circles-->
+            <div style="text-align:center">
+                <span class="carousel_dot" onclick="specific_image(1)"></span>
+                <span class="carousel_dot" onclick="specific_image(2)"></span>
+                <span class="carousel_dot" onclick="specific_image(3)"></span>
+            </div>
+
+            </br>
 
             <!--use special footer tag for the notes so that they appear at the bottom of the page-->
             <footer>*We adapted code for layer sorting in Unity; all other code and assets are of our own creation.</footer>
 
         </div>
+
+        <!--adds the carousel functionality-->
+        <script src="/carousel.js"></script>
     </body>
 </html>

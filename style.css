@@ -293,4 +293,93 @@ body {
     }
 }
 
-/* styling for the carousel */
+/* begin styling for the carousel */
+/* carousel code adapted from W3 schools at https://www.w3schools.com/howto/howto_js_slideshow.asp */
+.carousel_container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    /*border: 2px solid black;
+    border-radius: 10px;*/
+}
+
+.carousel_slide {
+    display: none;
+}
+
+.carousel_image {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.carousel_prev, .carousel_next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .6s ease;
+    border-radius: 0px 3px 3px 0px;
+    user-select: none;
+}
+
+.carousel_next {
+    right: 0px;
+    border-radius: 3px 0px 0px 3px;
+}
+
+.carousel_prev:hover, .carousel_next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*.carousel_text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}*/
+
+.carousel_numbers {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.carousel_dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0px 2px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease;
+}
+
+.carousel_active, .carousel_dot:hover {
+    background-color: #717171;
+}
+
+.carousel_fade {
+    animation-name: carousel_fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes carousel_fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/* end W3 schools adapted code */
