@@ -9,7 +9,7 @@
         <!--<link rel="icon" href="">-->
     </head>
 
-    <body>
+    <body onload="fade_buttons_in()">
         <!--header-->
         <div class="header">
             <!--container within the header still allows text to be properly aligned-->
@@ -26,10 +26,6 @@
             <a class="link" href="/aboutme"><button id="aboutme" class="home_button"><span class="button_text">About Me</span></button></a>
         </div>
 
-        <!--controls the buttons fading in after page loads, and loading the correct pages after clicking respective buttons-->
-        <!--only one line of JS, so we do it here instead of creating a whole new file-->
-        <script>
-            document.body.onload=function(){document.getElementById("buttons").style.opacity = 1;}
-        </script>
+        <script src="js/index.js"></script>
     </body>
 </html>

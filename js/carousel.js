@@ -5,15 +5,9 @@
 var index = 1;
 show_image(index);
 
-//prev and next controls
+//prev and next controls for arrow clicks
 function cycle_image(n) {
     index += n;
-    show_image(index);
-}
-
-//dot control
-function specific_image(n) {
-    index = n;
     show_image(index);
 }
 
@@ -25,11 +19,11 @@ function show_image(n) {
     //wraps from beginning to end if needed
     index = (n < 1) ? slides.length : index;
     //loops through the images, hiding all the ones except the correct one
+    //on the correct one, update the slide number too
     for(i = 0; i < slides.length; ++i) {
         if(index - 1 == i) {
             slides[i].style.display = "block";
-            //since get elements returns an array we have to index it even if there is only one item
-            document.getElementsByClassName("carousel_numbers")[0].innerHTML = index + "/" + slides.length;
+            document.getElementById("carousel_numbers").innerHTML = index + "/" + slides.length;
         }
         else {
             slides[i].style.display = "none";

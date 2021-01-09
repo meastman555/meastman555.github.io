@@ -5,11 +5,75 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
         <link rel="stylesheet" href="/style.css">
-        <!--change icon shown in task bar, when I have one-->
-        <!--<link rel="icon" href="">-->
     </head>
 
     <body>
-        <p>Test Space Game!!!</p>
+         <!--header, with navbar to other pages-->
+         <div class="header">
+            <div class="container">
+                <!--navigation menu-->
+                <nav class="nav_links">
+                    <a class="link nav_link" href="/">Home</a>
+                    <a class="link nav_link" href="/games">Games</a>
+                    <a class="link nav_link" href="/mods">Mods</a>
+                    <a class="link nav_link" href="/other">Other</a>
+                    <a class="link nav_link" href="/aboutme/">About Me</a>
+                </nav>
+                <h1 class="main_title">Space Game!!!</h1>
+                <p class="main_description">In space, no one can hear you (or your friend) scream.</p>
+            </div>
+        </div>
+
+        <!--all text and images of game resides within container-->
+        <div class="container">
+            <p class="content_description"><i>Space Game!!!</i> is a game created for the Global Game Jam in early 2020 -- "repair" was the theme. The goal
+                of the game is to work cooperatively with another player (locally) to pilot an astronaut and ship around levels to find and 
+                repair a broken satellie, through quicktime input. If the ship hits a wall or an asteroid, the astronaut must fly in and repair
+                the ship in the same way. My team at this jam was comprised of most of my teammates on <i>Endangered</i>, along with a 
+                few new faces. My role for this game was programmer. During the weekend, I was responsible for writing C# scripts that handled
+                controller input, movement, transitions, and the main menu. In addition I helped with some in-engine programming. Slightly ambitious,
+                this project pushed the boundaries of what a group of beginners could accomplish in one weekend.
+            </p>
+            <p><a class="content_link" href="https://globalgamejam.org/2020/games/space-game-9">Global Game Jam Page!</a></p>
+            <p><a class="content_link" href="https://github.com/meastman555/SpaceGame">See My Code and Download the Build!</a></p>
+            <p class="content_description">Awards: Best Multiplayer/Cooperative game (out of 30+ jam submissions).</p>
+            <p class="content_description">Controls: <b>Astronaut</b>: (Xbox Controller) Left stick to move, X to increase tether, B to decrease tether, face buttons for quick-time input;
+                (Keyboard) I-J-K-L for movement. This happened very late due to build errors, so the other controls were not mapped in time.
+                <b>Spaceship</b>: (Xbox Controller) Triggers to turn, A to move forward; (Keyboard) A-D to turn, Spacebar to move forward.
+            </p>
+
+            <!--carousel code adapted from W3 schools at https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+            <!--carousel container-->
+            <div class="carousel_container">
+                <!--slide number / total slides; this is set with js-->
+                <div id="carousel_numbers"></div>
+                <!--div for each slide, can add captions within if wanted, etc-->
+                <div class="carousel_slide">
+                    <img class="carousel_image" src="images/Space Game!!!/Space Game!!! 1.jfif">
+                </div>
+            
+                <div class="carousel_slide">
+                    <img class="carousel_image" src="images/Space Game!!!/Space Game!!! 2.jfif">
+                </div>
+            
+                <div class="carousel_slide">
+                    <img class="carousel_image" src="images/Space Game!!!/Space Game!!! 3.jfif">
+                </div>
+            
+                <!--next and previous buttons-->
+                <a class="carousel_prev" onclick="cycle_image(-1)">&#10094;</a>
+                <a class="carousel_next" onclick="cycle_image(1)">&#10095;</a>
+            </div>
+
+            <br>
+            <!--special notes that appear at the bottom of the page-->
+            <p>*All art assets were of our own creation. We adapted online C# scripts for a 
+                physics-based spring tether and cell-based procedural generation algorithm in order to save time. All other code is of our own creation.
+            </p>
+
+        </div>
+
+        <!--adds the carousel functionality-->
+        <script src="/js/carousel.js"></script>
     </body>
 </html>

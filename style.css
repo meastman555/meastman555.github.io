@@ -196,6 +196,10 @@ body {
     display: inline-block;
 }
 
+.list_sub_entry:last-child {
+    margin-bottom: 10px;
+}
+
 @media (min-width: 992px) {
     .list_sub_entry {
         margin: 50px 10px;
@@ -336,7 +340,7 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.carousel_numbers {
+#carousel_numbers {
     color: white;
     font-size: 20px;
     padding: 8px 12px;

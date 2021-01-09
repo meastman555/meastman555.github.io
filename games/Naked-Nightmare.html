@@ -5,8 +5,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
         <link rel="stylesheet" href="/style.css">
-        <!--change icon shown in task bar, when I have one-->
-        <!--<link rel="icon" href="">-->
     </head>
 
     <body>
@@ -22,41 +20,41 @@
                     <a class="link nav_link" href="/aboutme/">About Me</a>
                 </nav>
                 <h1 class="main_title">Naked Nightmare</h1>
-                <p class="main_description">It's everybody's worst nightmare -- now it's a video game</p>
+                <p class="main_description">It's everybody's worst nightmare -- now it's a video game.</p>
             </div>
         </div>
 
         <!--all text and images of game resides within container-->
         <div class="container">
-            <p class="content_description"><i>Naked Nightmare</i> is the third game my game jam group and I have made together, the first two being <i>Endangered</i> and <i>Space Game!!!</i>. 
+            <p class="content_description"><i>Naked Nightmare</i> is the third game my game jam group and I made together, the first two being <i>Endangered</i> and <i>Space Game!!!</i>. 
                 This jam was once again through the University of Texas' game development club, although this time around I was both a participant and a manager (being the president of the club at the time). 
                 Nonetheless, we all worked hard on this game and it's our best yet; I'm particularly happy with the programming I did. This is a stealth-based line-of-sight game, as well as the first game 
                 I've made with a proper cutscene. The former required me to use vector math that I knew from both my previous linear algebra class, and the vector calculus class I was taking the semester of this jam. 
-                I had to use it to calculate the distance and angle between the player character and the "enemies," to determine if the player was in their line of sight. 
-                Objects would block this line of sight. For the cutscene, I had to learn how to use Unity's animation window within the editor, something I haven't done before, 
+                I had to use it to calculate the distance and angle between the player character and the "enemies," to determine if the player was in their cone of vision. 
+                Objects would block their sight. For the cutscene, I had to learn how to use Unity's animation window within the editor, something I haven't done before, 
                 in order to time the camera movements to the audio, and transition to gameplay once the cutscene ended. Overall, even though the gameplay is simple, this game required me to know and code 
-                more math than my previous games, and it was the first substantial game I've made where I can practically see why calculus and vectors are so important in gameplay programming.</p>
+                more math than my previous games, and it was the first substantial game I've made where I can practically see why calculus and vectors are so important in gameplay programming.
+            </p>
             <p><a class="content_link" href="https://trendywalnut.itch.io/naked-nightmare">Itch.io Page!</a></p>
             <p><a class="content_link" href="https://github.com/meastman555/Naked-Nightmare">See My Code and Download the Build!</a></p>
-            <p class="content_description">Controls: WASD for movement.</p>
+            <p class="content_description">Awards: Runner-Up for Best Sound/Music (out of 20+ jam submissions).</p>
+            <p class="content_description">Controls: W-A-S-D for movement.</p>
 
             <!--carousel code adapted from W3 schools at https://www.w3schools.com/howto/howto_js_slideshow.asp-->
             <!--carousel container-->
             <div class="carousel_container">
-                <div class="carousel_numbers"></div>
-                <!--full-width images with number and caption text-->
+                <!--slide number / total slides; this is set with js-->
+                <div id="carousel_numbers"></div>
+                <!--div for each slide, can add captions within if wanted, etc-->
                 <div class="carousel_slide">
-                    <!--<div class="carousel_numbers">1 / 3</div>-->
                     <img class="carousel_image" src="images/Naked Nightmare/Naked Nightmare 1.png">
                 </div>
             
                 <div class="carousel_slide">
-                    <!--<div class="carousel_numbers">2 / 3</div>-->
                     <img class="carousel_image" src="images/Naked Nightmare/Naked Nightmare 2.png">
                 </div>
             
                 <div class="carousel_slide">
-                    <!--<div class="carousel_numbers">3 / 3</div>-->
                     <img class="carousel_image" src="images/Naked Nightmare/Naked Nightmare 3.png">
                 </div>
             
@@ -72,6 +70,6 @@
         </div>
 
         <!--adds the carousel functionality-->
-        <script src="/carousel.js"></script>
+        <script src="/js/carousel.js"></script>
     </body>
 </html>

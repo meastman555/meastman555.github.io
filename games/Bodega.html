@@ -5,11 +5,70 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
         <link rel="stylesheet" href="/style.css">
-        <!--change icon shown in task bar, when I have one-->
-        <!--<link rel="icon" href="">-->
     </head>
 
     <body>
-        <p>Test Bodega</p>
+         <!--header, with navbar to other pages-->
+         <div class="header">
+            <div class="container">
+                <!--navigation menu-->
+                <nav class="nav_links">
+                    <a class="link nav_link" href="/">Home</a>
+                    <a class="link nav_link" href="/games">Games</a>
+                    <a class="link nav_link" href="/mods">Mods</a>
+                    <a class="link nav_link" href="/other">Other</a>
+                    <a class="link nav_link" href="/aboutme/">About Me</a>
+                </nav>
+                <h1 class="main_title">Bodega</h1>
+                <p class="main_description">When faced with a moral grey area, what would you do?</p>
+            </div>
+        </div>
+
+        <!--all text and images of game resides within container-->
+        <div class="container">
+            <p class="content_description"><i>Bodega</i> is a linear, narrative game I helped create as part of a game jam to help raise awareness for BLM. There were five themes for this jam; 
+                they were "Equality, Diversity, Justice, Opportunity, and Inclusivity." This game is a lesson in being patient with everyone, and extending true justice as an arm of equality. 
+                Nuance and humanity are big themes of this narrative experience, as you interact with a child and take the time to learn the reasoningbehind his actions. I did all of the 
+                programming for this game, and had a decent amount of narrative input. My tasks included: movement, object interaction, button prompts/linking, and a dialogue system. 
+                This was the first time I had to implement a basic dialogue system; in this way I contributed to the narrative as well. Originally we wanted branching dialogue options, but due to time 
+                contraints and lack of experience, I was unable to achieve this functionality. I worked with our narrative designer to determine and code the linear path we found most fitting. 
+                Ultimately, we ended up with a finished product that tells an intriguing and very human story that everyone can relate to (due in part to the purposefully ambiguous gray player character).
+            </p>
+            <p><a class="content_link" href="https://aquafroq.itch.io/bodega">Itch.io Page!</a></p>
+            <p><a class="content_link" href="https://github.com/meastman555/BLMJam">See My Code and Download the Build!</a></p>
+            <p class="content_description">Awards: No awards were distributed at this special game jam.</p>
+            <p class="content_description">Controls: A-D for movement, E to interact with objects and people.</p>
+
+            <!--carousel code adapted from W3 schools at https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+            <!--carousel container-->
+            <div class="carousel_container">
+                <!--slide number / total slides; this is set with js-->
+                <div id="carousel_numbers"></div>
+                <!--div for each slide, can add captions within if wanted, etc-->
+                <div class="carousel_slide">
+                    <img class="carousel_image" src="images/Bodega/Bodega 1.jfif">
+                </div>
+            
+                <div class="carousel_slide">
+                    <img class="carousel_image" src="images/Bodega/Bodega 2.jfif">
+                </div>
+            
+                <div class="carousel_slide">
+                    <img class="carousel_image" src="images/Bodega/Bodega 3.jfif">
+                </div>
+            
+                <!--next and previous buttons-->
+                <a class="carousel_prev" onclick="cycle_image(-1)">&#10094;</a>
+                <a class="carousel_next" onclick="cycle_image(1)">&#10095;</a>
+            </div>
+
+            <br>
+            <!--special notes that appear at the bottom of the page-->
+            <p>*All art assets are of our own creation. The dialogue trigger system was initially adapted from a Brackey's youtube tutorial, but heavily altered to suit our own needs.</p>
+
+        </div>
+
+        <!--adds the carousel functionality-->
+        <script src="/js/carousel.js"></script>
     </body>
 </html>

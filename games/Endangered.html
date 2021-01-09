@@ -5,11 +5,72 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
         <link rel="stylesheet" href="/style.css">
-        <!--change icon shown in task bar, when I have one-->
-        <!--<link rel="icon" href="">-->
     </head>
 
     <body>
-        <p>Test Endangered</p>
+         <!--header, with navbar to other pages-->
+         <div class="header">
+            <div class="container">
+                <!--navigation menu-->
+                <nav class="nav_links">
+                    <a class="link nav_link" href="/">Home</a>
+                    <a class="link nav_link" href="/games">Games</a>
+                    <a class="link nav_link" href="/mods">Mods</a>
+                    <a class="link nav_link" href="/other">Other</a>
+                    <a class="link nav_link" href="/aboutme/">About Me</a>
+                </nav>
+                <h1 class="main_title">Endangered</h1>
+                <p class="main_description">Three aliens; one goal.</p>
+            </div>
+        </div>
+
+        <!--all text and images of game resides within container-->
+        <div class="container">
+            <p class="content_description"><i>Endangered</i> is a Unity-based game I helped create during a 36-hour Game Jam at UT. It’s the first legitimate 
+                game I made, using more than public, on-line art and block-coding. I collaborated with a group of friends and an industry mentor 
+                from Bethesda Game Studios in Austin (all credits can be found by pressing “enter/return” at the title screen). My role was lead 
+                programmer. My tasks included all of the C# scripts for character movement, level and cut-scene transitions, object interactions and behaviors; 
+                I was also responsible for enabling responsive and intuitive user input, and fixing most bugs we came across (if only it were 
+                physically possible to squash every bug). I also had a minor role in design: as programmer, I helped decide which aspects would have 
+                to be cut — due to the potential time needed to implement them — and tweaked features for a better user experience.
+            </p>
+            <p><a class="content_link" href="https://masonator555.itch.io/endangered">Itch.io Page!</a></p>
+            <p><a class="content_link" href="https://github.com/meastman555/Endangered">See My Code and Download the Build!</a></p>
+            <p class="content_description">Awards: Best Sound and Music (out of 10+ jam submissions).</p>
+            <p class="content_description">Controls: A-D for movement, Enter/Return to interact with objects.</p>
+
+            <!--carousel code adapted from W3 schools at https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+            <!--carousel container-->
+            <div class="carousel_container">
+                <!--slide number / total slides; this is set with js-->
+                <div id="carousel_numbers"></div>
+                <!--div for each slide, can add captions within if wanted, etc-->
+                <div class="carousel_slide">
+                    <img class="carousel_image" src="images/Endangered/Endangered 1.jfif">
+                </div>
+            
+                <div class="carousel_slide">
+                    <img class="carousel_image" src="images/Endangered/Endangered 2.jfif">
+                </div>
+            
+                <div class="carousel_slide">
+                    <img class="carousel_image" src="images/Endangered/Endangered 3.jfif">
+                </div>
+            
+                <!--next and previous buttons-->
+                <a class="carousel_prev" onclick="cycle_image(-1)">&#10094;</a>
+                <a class="carousel_next" onclick="cycle_image(1)">&#10095;</a>
+            </div>
+
+            <br>
+            <!--special notes that appear at the bottom of the page-->
+            <p>*To save time, our artists used tile-sets from the Gothicvania Swap Artwork 
+                and Sunnyland free, public asset packs from the Unity Asset Store. Everything other than that is of our own creation.
+            </p>
+
+        </div>
+
+        <!--adds the carousel functionality-->
+        <script src="/js/carousel.js"></script>
     </body>
 </html>
