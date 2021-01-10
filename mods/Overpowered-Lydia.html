@@ -5,11 +5,56 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
         <link rel="stylesheet" href="/style.css">
-        <!--change icon shown in task bar, when I have one-->
-        <!--<link rel="icon" href="">-->
     </head>
 
     <body>
-        <p>Test Overpowered Lydia</p>
+         <!--header, with navbar to other pages-->
+         <div class="header">
+            <div class="container">
+                <!--navigation menu-->
+                <nav class="nav_links">
+                    <a class="link nav_link" href="/">Home</a>
+                    <a class="link nav_link" href="/games">Games</a>
+                    <a class="link nav_link" href="/mods">Mods</a>
+                    <a class="link nav_link" href="/other">Other</a>
+                    <a class="link nav_link" href="/aboutme/">About Me</a>
+                </nav>
+                <h1 class="main_title">Overpowered Lydia</h1>
+                <p class="main_description">For when the best follower can't quite protect themselves enough.</p>
+            </div>
+        </div>
+
+        <!--all text and images of game resides within container-->
+        <div class="container">
+            <p class="content_description">Followers in Skyrim die too quickly, and often accidentally by the player’s own hand. This always frustrated me, but instead of 
+                downloading an already made mod to fix this, I decided to learn how to do it myself, while making a few additional changes in the process. 
+                I chose to buff Lydia, because you meet her early in the game, and she is a well balanced, valuable follower (and a lovable meme, but that’s not as important). 
+                I dramatically scaled her melee weapon up, while making her invulnerable. Does this break the game a little bit? Yes. Does it make obliterating dragons THAT much better? Absolutely.
+                </br></br>
+                A simple mod, all I had to do was manipulate Lydia’s NPC through the Creation Kit; no scripting or external assets were needed.
+            </p>
+
+            <!--mod download link (wrapped in paragraph tags to ensure line spacing)-->
+            <p><a class="content_link" href="downloads/Overpowered Lydia.esp" download>Download this Mod!</a></p>
+
+            <!--carousel code adapted from W3 schools at https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+            <!--carousel container-->
+            <div class="carousel_container">
+                <!--slide number / total slides; this is set with js-->
+                <div id="carousel_numbers"></div>
+                <!--div for each slide, can add captions within if wanted, etc-->
+                <div class="carousel_slide">
+                    <img class="carousel_image" src="images/Overpowered Lydia/Overpowered Lydia 1.jpg">
+                </div>
+            
+                <!--next and previous buttons-->
+                <a class="carousel_prev" onclick="cycle_image(-1)">&#10094;</a>
+                <a class="carousel_next" onclick="cycle_image(1)">&#10095;</a>
+            </div>
+
+        </div>
+
+        <!--adds the carousel functionality-->
+        <script src="/js/carousel.js"></script>
     </body>
 </html>

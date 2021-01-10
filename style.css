@@ -87,7 +87,7 @@ body {
     display: block;
     position: relative;
     margin: 30px auto;
-    padding: 45px 100px;
+    padding: 45px 0px;
     width: 90%;
     border: 2px solid black;
     border-radius: 10px;
@@ -127,7 +127,7 @@ body {
     background-color: rgba(255, 255, 255, .9);
     color: black;
     border-radius: 10px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-transform: uppercase;
     font-weight: bold;
 }
