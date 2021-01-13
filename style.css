@@ -78,7 +78,6 @@ body {
     transition: opacity 3s;
     -webkit-transition: opacity 3s;
     -moz-transition: opacity 3s;
-    -o-transition: opacity 3s;
     -ms-transition: opacity 3s;
 }
 
@@ -93,7 +92,8 @@ body {
     border-radius: 10px;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 10px 10px rgba(0, 0, 0, 0.);
+    -webkit-box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
     outline: none;
 }
 
@@ -117,6 +117,7 @@ body {
     box-shadow: 0px 0px #6b54d3;
     -moz-box-shadow: 0px 0px #6b54d3;
     -webkit-box-shadow: 0px 0px #6b54d3;
+    -ms-box-shadow: 0px 0px #6b54d3;
     top: 10px;
 }
 
@@ -214,7 +215,8 @@ body {
     border-radius: 10px;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 10px 10px rgba(0, 0, 0, 0.);
+    -webkit-box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 10px 10px rgba(0, 0, 0, 0.);
     outline: none;
     background-color: lightgrey;
 }
@@ -236,6 +238,7 @@ body {
     box-shadow: 0px 0px #6b54d3;
     -moz-box-shadow: 0px 0px #6b54d3;
     -webkit-box-shadow: 0px 0px #6b54d3;
+    -ms-box-shadow: 0px 0px #6b54d3;
     top: 10px;
 }
 
@@ -305,11 +308,8 @@ body {
     margin: auto;
 }
 
-.carousel_slide {
-    display: none;
-}
-
 .carousel_image {
+    display: none;
     width: 100%;
     overflow: hidden;
     border: 2px solid black;
@@ -322,31 +322,37 @@ body {
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
+    padding: 20px 5px;
     color: white;
+    background-color: rgba(0, 0, 0, 0.8);
     font-weight: bold;
-    font-size: 18px;
-    transition: .6s ease;
-    border-radius: 0px 3px 3px 0px;
+    font-size: .8em;
+    border-radius: 2px;
     user-select: none;
 }
 
-.carousel_next {
-    right: 0px;
-    border-radius: 3px 0px 0px 3px;
+/* hate this, but I can't figure out why the border radius is weird with spacing */
+.carousel_prev {
+    left: 1%;
 }
 
-.carousel_prev:hover, .carousel_next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.carousel_next {
+    right: 0%;
 }
 
 #carousel_numbers {
     color: white;
-    font-size: 20px;
-    padding: 8px 12px;
+    font-size: .8em;
+    padding: 8px;
+    margin: 5px;
     position: absolute;
     top: 0px;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
 }
 /* end W3 schools adapted code */
