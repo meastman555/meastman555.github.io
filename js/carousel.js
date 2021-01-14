@@ -28,7 +28,7 @@ function show_image(n) {
             numbers.innerHTML = index + "/" + images.length;
             //uses CSS transition to have the numbers fade in, then fades them out here
             numbers.style.opacity = "1";
-            setTimeout(function(){numbers.style.opacity = "0"}, 1000);
+            setTimeout(function(){numbers.style.opacity = "0"}, 2000);
         }
         else {
             images[i].style.display = "none";
