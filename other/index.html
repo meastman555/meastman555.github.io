@@ -8,7 +8,63 @@
     </head>
 
     <body>
-        <h1>Test: Other!</h1>
+        <!--header, with navbar to other pages-->
+        <div class="header">
+            <div class="container">
+                <!--navigation menu-->
+                <nav class="nav_links">
+                    <a class="link nav_link" href="/">Home</a>
+                    <a class="link nav_link" href="/games">Games</a>
+                    <a class="link nav_link" href="/mods">Mods</a>
+                    <a class="link nav_link" href="/aboutme">About Me</a>
+                </nav>
+                <h1 class="main_title">Other</h1>
+                <p class="main_description">Programming Projects That Aren't Directly Tied to Video Game Development.</p>
+            </div>
+        </div>
+
+        <!--another container to hold the other projects-->
+        <!--each other project has title, description, link-->
+        <div class="container">
+            
+            <!--entry for portfolio-->
+            <div class="list_sub_entry">
+                <h1 class="list_title">Portfolio</h1>
+                <p class="content_description">That's right! I built this basic portfolio from the ground up using basic vanilla HTML5 and CSS3 that I learned from Stackskills© tutorials, 
+                    during my time at home during the COVID-19 pandemic. The use of media queries ensures that it will dynamically look good on any-sized screen. Being new to web-dev, 
+                    there are certainly things I could do better and clean up -- as I continue to practice and learn new skills and languages, this site will likely change for the better!
+                     Currently, this site is going through a complete overhaul in style and user-experience, with some added javascript to spice things up. 
+                     The work in progress code is on the "new_style" branch on GitHub.
+                </p>
+                <p><a class="content_link" href="https://github.com/meastman555/meastman555.github.io">See My Code!</a></p>
+            </div>
+
+            <!--entry for pintOS-->
+            <div class="list_sub_entry">
+                <h1 class="list_title">PintOS</h1>
+                <p class="content_description">A toy operating system that I heavily expanded on as part of my Operating Systems class at UT, along with my group members. 
+                    We designed and implemented various aspects of functionality for this OS, such as priority donation (used to improve locks and semaphores) and scheduling, 
+                    the ability to support user-programs and handle system calls, virtual memory (including a frame table, supplemental page table, and swap table), and a 
+                    file-system (using our own implemented double-indirect blocks) with working disk permanance and directory navigation/manipulation structures. 
+                    I always find myself referencing these concepts, as even the higher level video game code I write for my projects can be traced back to these fundamental 
+                    computer and programming concepts. Due to this being a series of school projects for grades, I am unable to share the code I wrote.
+                </p>
+            </div>
+
+            <!--entry for Vigenere Encryption-->
+            <div class="list_sub_entry">
+                <h1 class="list_title">Vigenère Password Encrypter</h1>
+                <p class="content_description">During the COVID-19 pandemic, I spent some of my time in quarantine learning the basics of Python through Stackskills© tutorials. 
+                    My first independent project is a password encrypter/decrypter that uses the Vigenère cipher (which encrypts words/phrases with a user-memorized key). 
+                    Users will give the program a file; stored here are account-encrypted password pairs. There are options to encrypt a password and add a new account, 
+                    decrypt a password, update a password (re-encrypt), delete an account, or list the accounts currently in the file. Nothing fancy, but a good way to practice 
+                    with a new language, and a helpful way for me to avoid forgetting passwords.
+                </p>
+                <p><a class="content_link" href="https://github.com/meastman555/vigenere-passwords">See My Code!</a></p>
+            </div>
+
+        </div>
+
 
     </body>
 

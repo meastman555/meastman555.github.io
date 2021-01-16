@@ -8,8 +8,57 @@
     </head>
 
     <body>
-        <h1>Test: About Me!</h1>
+        <!--header, with navbar to other pages-->
+        <div class="header">
+            <div class="container">
+                <!--navigation menu-->
+                <nav class="nav_links">
+                    <a class="link nav_link" href="/">Home</a>
+                    <a class="link nav_link" href="/games">Games</a>
+                    <a class="link nav_link" href="/mods">Mods</a>
+                    <a class="link nav_link" href="/other">Other</a>
+                </nav>
+                <h1 class="main_title">About Me</h1>
+                <p class="main_description">Student; Gamer; President; Pianist.</p>
+            </div>
+        </div>
 
+        <!--container for all the body information about me-->
+        <div class="container">
+
+            <!--carousel goes first so people can see me before just reading-->
+            <!--carousel code adapted from W3 schools at https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+            <!--carousel container-->
+            <div class="carousel_container">
+                <!--slide number / total slides; this is set with js-->
+                <div id="carousel_numbers"></div>
+                <!--images in carousel-->
+                <img class="carousel_image" src="images/About Me 1.jpeg">
+                <img class="carousel_image" src="images/About Me 2.jpeg">
+                <img class="carousel_image" src="images/About Me 3.jpeg">
+                <img class="carousel_image" src="images/About Me 4.jpeg">
+            
+                <!--next and previous buttons-->
+                <a class="carousel_prev" onclick="cycle_image(-1)">&#10094;</a>
+                <a class="carousel_next" onclick="cycle_image(1)">&#10095;</a>
+            </div>
+
+            <p class="content_description">Hello! I’m Mason, a junior at the University of Texas at Austin studying Computer Science. I’ve a passion for programming, math, and all things video-games. 
+                I’ve played everything from Wii Sports to Red Dead Redemption 2; my dream is to work on rich, narrative-driven RPGs. Bethesda’s Creation Kit and the Unity game engine have 
+                given me a taste for what the world of game development offers — and I want more. I love to learn about game development, through GDC industry talks, and events — 
+                ranging from industry speaker nights to hands-on workshops — with the game development club on campus, of which I am currently the president. As a computer science major, 
+                my focus is in programming, though I have done a fair share of game design and even management while working on group projects. However, I am eager to learn and practice all aspects of game development. 
+                I excel at working with other people, and there isn’t a problem I won’t chase down until completion. When I’m not coding, I’m always thinking of what would be fun not only to play, but to create.
+            </p>
+            <!--uses divs for the text here because paragraphs had to much margin spacing-->
+            <div class="content_description" style="font-weight: bold; text-transform: uppercase;">Contact me!</div>
+            <div class="content_description">Phone: (214)-809-9893</div>
+            <!--have to use a span here or else the styling breaks-->
+            <div><span class="content_description">Email: </span><a class="content_link" href="mailto:masoneastman555@gmail.com">masoneastman555@gmail.com</a></div>
+            </br>
+
+        </div>
+        <script src="/js/carousel.js"></script>
     </body>
 
 </html>
