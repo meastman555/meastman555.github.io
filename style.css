@@ -2,6 +2,17 @@
 /* default class and id styling is for mobile */
 /* inspired by Bootstrap, but I wanted to learn how to achieve similar effects using the vanilla languages */
 
+@font-face {
+    font-family: avenir;
+    src: url(/fonts/avenir/AvenirLTStd-Roman.otf);
+}
+
+/* so far, everything has this font */
+/* can go through and specify per element if more fonts are added later */
+* {
+    font-family: avenir;
+}
+
 /* container for extra small, small, and medium devices */
 /* this is so that the page has style for phones and tablets and another style for computers */
 .container {
@@ -39,7 +50,6 @@ body {
 .main_title {
     text-align: center;
     color: white;
-    font-family: sans-serif;
     font-size: 2.5em;
     font-weight: bold;
 }
@@ -48,7 +58,6 @@ body {
     text-align: center;
     color: white;
     font-style: italic;
-    font-family: sans-serif;
     font-size: 1.2em;
 }
 
