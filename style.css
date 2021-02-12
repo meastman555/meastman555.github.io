@@ -47,9 +47,17 @@ body {
     background-color: black;
 }
 
+.front_page_header {
+    background-image: url(/images/Controllers.jpg);
+    background-size: cover;
+}
+
 .main_title {
     text-align: center;
     color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid black;
+    border-radius: 10px;
     font-size: 2.5em;
     font-weight: bold;
 }
@@ -57,6 +65,9 @@ body {
 .main_description {
     text-align: center;
     color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid black;
+    border-radius: 10px;
     font-style: italic;
     font-size: 1.2em;
 }
@@ -97,6 +108,7 @@ body {
     margin: 30px auto;
     padding: 45px 0px;
     width: 90%;
+    height: 125px;
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
@@ -104,7 +116,11 @@ body {
     -webkit-box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
     -ms-box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
     outline: none;
-    transition: all .5s;
+    transition: width 0.75s, height 0.75s;
+    -moz-transition: width 0.75s, height 0.75s;
+    -webkit-transition: width 0.75s, height 0.75s;
+    -ms-transition: width 0.75s, height 0.75s;
+    background-color: lightgrey;
 }
 
 /* hovering over the buttons is only applied on computers */
@@ -117,7 +133,7 @@ body {
     /* this is a little jarring at the moment so try to smooth it out somehow (overlapping transitions?) */
     .home_button:hover {
         width: 100%;
-        height: 150px;
+        height: 160px;
         background-size: cover;
     }
 }
@@ -135,9 +151,9 @@ body {
 .button_text {
     padding: 10px 25px;
     /* should mess around with font, size, color, background, etc */
-    background-color: rgba(255, 255, 255, .9);
+    /*background-color: rgba(255, 255, 255, .9);*/
     color: black;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: bold;
@@ -153,12 +169,12 @@ body {
 
 /* specific buttons accessed so their backgrounds can be set with images */
 /* dimensions of images can be set with .home_button then for desktop the same way with media query */
-#games {
-    background-image: url("/images/Controllers.jpg");
+/*#games {
+    background-image: url();
 }
 
 #mods {
-    background-image: url();
+    background-color: url();
 }
 
 #other {
@@ -167,7 +183,7 @@ body {
 
 #aboutme {
     background-image: url();
-}
+}*/
 
 /* header links that act as a nav bar to other pages */
 .nav_links {
@@ -177,7 +193,7 @@ body {
 
 .nav_link {
     margin-right: 20px;
-    font-size: 1.2em;
+    font-size: .8em;
     color: greenyellow;
 }
 
@@ -244,6 +260,11 @@ body {
     .list_button:hover {
         cursor: pointer;
     }
+
+    .list_button_modspec {
+        float: none;
+        width: 100%;
+    }
 }
 
 .list_button:active {
@@ -309,6 +330,22 @@ body {
 
     .content_link {
         font-size: 1.5em;
+    }
+}
+
+.about_me_img {
+    height: 100%;
+    width: 100%;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+    .about_me_img {
+        height: 33%;
+        width: 33%;
     }
 }
 
