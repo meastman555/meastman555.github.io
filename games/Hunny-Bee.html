@@ -5,11 +5,65 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
         <link rel="stylesheet" href="/style.css">
-        <!--change icon shown in task bar, when I have one-->
-        <!--<link rel="icon" href="">-->
     </head>
 
     <body>
-        <p>Test Hunny-Bee</p>
+        <!--header, with navbar to other pages-->
+        <div class="header">
+            <div class="container">
+                <!--navigation menu-->
+                <nav class="nav_links">
+                    <a class="link nav_link" href="/">Home</a>
+                    <a class="link nav_link" href="/games">Games</a>
+                    <a class="link nav_link" href="/mods">Mods</a>
+                    <a class="link nav_link" href="/other">Other</a>
+                    <a class="link nav_link" href="/aboutme/">About Me</a>
+                </nav>
+                <h1 class="main_title">Hunny-Bee</h1>
+                <p class="main_description">Eating honey has never been so sweet.</p>
+            </div>
+        </div>
+
+        <!--all text and images of game resides within container-->
+        <div class="container">
+            <p class="content_description"><i>Hunny-Bee</i> is a very short and simple mini-game made during the first special Mega-Micro jam hosted by UT's Game Development Club.
+                Inspired by the <i>Wario-ware</i> franchise, we wanted to do something similar, where every jam team would contribute a small mini-game (or multiple) following a theme
+                to be a part of a larger collection of these minigames. I worked on this game with my younger brother and my girlfriend -- since this game was much easier and smaller
+                in scope, I used a lot of time educating them on how games get made and walked my brother through some coding, since he has some interest in programming and game design. 
+                I still wrote most of the code, which included linking animations, determing win/lose conditions, input, and interacting with the already established codebase for the project
+                (written by some other officers in advance of the jam). This was a great chance to practice writing efficient code in a short amount of time, since this wasnt a whirlwind of
+                "just write it fast and make sure it works we don't have time to make it look pretty" coding like a normal game jam. All in all a super fun project to work on and teaching experience!</p>
+            <p><a class="content_link" href="https://egads-austin.itch.io/egads-mega-micro-jam">Itch.io Page for the entire game!</a></p>
+            <p><a class="content_link" href="https://github.com/meastman555/BeegadsJam">See My Code</a></p>
+            <p class="content_description">Awards: No awards were distributed at this special game jam.</p>
+            <p class="content_description">Controls: Space to eat, B to toggle concept art easter egg.</p>
+
+            <!--carousel code adapted from W3 schools at https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+            <!--carousel container-->
+            <div class="carousel_container">
+                <!--slide number / total slides; this is set with js-->
+                <div id="carousel_numbers"></div>
+                <!--images in carousel-->
+                <img class="carousel_image" src="images/Hunny-Bee/Hunny-Bee 1.PNG">
+                <img class="carousel_image" src="images/Hunny-Bee/Hunny-Bee 2.PNG">
+                <img class="carousel_image" src="images/Hunny-Bee/Hunny-Bee 3.PNG">
+            
+                <!--next and previous buttons-->
+                <a class="carousel_prev" onclick="cycle_image(-1)">&#10094;</a>
+                <a class="carousel_next" onclick="cycle_image(1)">&#10095;</a>
+            </div>
+
+            <p class="content_description">When played from the full game, it is impossible to pause to take adequate screenshots, so these are from the solo build of the game. 
+                In the full game, the yellow border and timer are replaced with a thematic background and dynamic timer, but Hunny-Bee looks the exact same.
+            </p>
+
+            <!--special notes that appear at the bottom of the page-->
+            <p>*The music and sound effects were created by another officer prior to the jam (for anyone to use during in their jam game).
+                All other assets are of our own creation.
+            </p>
+        </div>
+
+        <!--adds the carousel functionality-->
+        <script src="/js/carousel.js"></script>
     </body>
 </html>
