@@ -1,11 +1,11 @@
 //carousel code adapted from W3 schools at https://www.w3schools.com/howto/howto_js_slideshow.asp
 
-images = document.getElementsByClassName("carousel_image");
-numbers = document.getElementById("carousel_numbers");
+const images = document.getElementsByClassName("carousel_image");
+const numbers = document.getElementById("carousel_numbers");
 
 //page starts by showing the first image
 //use 1 based indexxing since the image "number" shown starts at 1
-var index = 1;
+let index = 1;
 show_image(index);
 
 //prev and next controls for arrow clicks
